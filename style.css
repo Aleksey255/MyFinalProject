@@ -1,0 +1,24 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    width: 32em;
+}
+.temp-min, .temp-max {
+    color: rgb(184, 184, 184);
+}
+.temp-min-max {
+    display: flex;
+    padding-left: 1em;
+}
+.temp, .city-name{
+    font-size: xx-large;
+}
+.city-name {
+    font-weight: bolder;
+}
+.temp {
+    padding-left: 0.5em;
+}
+.wind {
+    padding-left: 1em;
+}
