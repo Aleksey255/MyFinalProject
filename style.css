@@ -1,24 +1,43 @@
+.container {
+    display: flex;
+}
+
 .weather {
     display: flex;
     flex-direction: column;
     width: 32em;
+    text-align: center;
 }
-.temp-min, .temp-max {
+
+.temp-min,
+.temp-max {
     color: rgb(184, 184, 184);
 }
+
 .temp-min-max {
     display: flex;
     padding-left: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
-.temp, .city-name{
+
+.temp,
+.city-name {
     font-size: xx-large;
 }
+
 .city-name {
     font-weight: bolder;
 }
+
 .temp {
     padding-left: 0.5em;
 }
+
 .wind {
     padding-left: 1em;
+}
+
+.massiv {
+    margin-top: 6em;
 }
