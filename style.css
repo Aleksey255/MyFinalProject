@@ -1,12 +1,39 @@
+body {
+    background-color: #d9d9d9;
+}
+
 .container {
     display: flex;
+}
+
+.weather,
+.massiv,
+.calc {
+    margin: 1em;
 }
 
 .weather {
     display: flex;
     flex-direction: column;
-    width: 32em;
+    width: 14em;
+    height: 14em;
     text-align: center;
+    background-color: #f0f0f0;
+    border: 0.02em solid black
+}
+
+.icon {
+    margin-top: 0.5em;
+    background-color: blue;
+    width: 5em;
+    height: 5em;
+    margin-left: 5em;
+    border-radius: 2em;
+}
+
+.icon img {
+    width: 5em;
+    height: 5em;
 }
 
 .temp-min,
@@ -39,5 +66,61 @@
 }
 
 .massiv {
-    margin-top: 6em;
+    background-color: #2fbcd7;
+    width: 16em;
+    text-align: center;
+}
+
+.ad,
+.btn {
+    margin-top: 3em;
+}
+
+ul {
+    color: white
+}
+
+.num,
+.op,
+.ravno,
+.backspace {
+    width: 3em;
+    height: 3em;
+    margin: 0.02em;
+    padding: 0.02em;
+}
+
+img {
+    width: 1em;
+    height: 1em;
+}
+
+.result {
+    width: 5em;
+    height: 1em;
+    margin-bottom: 0.02em;
+    border: 0.02em solid black;
+    text-align: right;
+    background-color: #20201f;
+    color: white;
+    font-size: 200%;
+}
+.calc {
+    width: 11em;
+    height: 12.5em;
+    background-color: #302f2e
+}
+@media (max-width: 430px) {
+    .container{
+        flex-direction: column;
+    }
+    .weather{
+        margin-left: 5em;
+    }
+    .massiv{
+        margin-left: 4em;
+    }
+    .calc{
+        margin-left: 7em;
+    }
 }
